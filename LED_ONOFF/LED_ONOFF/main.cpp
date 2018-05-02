@@ -16,7 +16,8 @@ int main(void)
 	int A=0b00000001;
     /* Replace with your application code */
     while (1) 
-    {	PORTD=~0x01;    
+    {	
+		  
 		for(int i=0;i<8;i++){
 			A = A<<1;  
 			PORTD = ~A;
