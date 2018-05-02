@@ -13,7 +13,7 @@ int main(void)
 {
 	DDRD = 0xff;
 	PORTD = 0xff;
-	int A=0b00000001;
+	int A=0b00000001;	
     /* Replace with your application code */
     while (1) 
     {	
