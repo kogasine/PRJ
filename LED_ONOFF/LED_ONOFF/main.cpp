@@ -18,13 +18,13 @@ int main(void)
     while (1) 
     {	
 		  
-		for(int i=0;i<8;i++){
+		for(int i=0;i<7;i++){
 			A = A<<1;  
 			PORTD = ~A;
 			_delay_ms(500);
 			
 		}
-		for(int i=0;i<8;i++){
+		for(int i=0;i<7;i++){
 				A = A>>1;
 				PORTD = ~A;
 				_delay_ms(500);
