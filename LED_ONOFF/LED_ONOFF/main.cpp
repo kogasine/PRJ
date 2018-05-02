@@ -17,11 +17,16 @@ int main(void)
     /* Replace with your application code */
     while (1) 
     {	PORTD=~0x01;    
-		for(int i=0;i<9;i++){
+		for(int i=0;i<8;i++){
 			A = A<<1;  
 			PORTD = ~A;
 			_delay_ms(500);
 			
+		}
+		for(int i=0;i<8;i++){
+				A = A>>1;
+				PORTD = ~A;
+				_delay_ms(500);
 		}
 		
 		
